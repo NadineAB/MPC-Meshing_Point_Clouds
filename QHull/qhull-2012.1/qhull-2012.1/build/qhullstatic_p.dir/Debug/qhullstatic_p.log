@@ -1,0 +1,53 @@
+﻿Build started 28/02/2013 20.25.09.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\qhullstatic_p.vcxproj" on node 5 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "qhullstatic_p.dir\Debug\qhullstatic_p.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       MakeDirsForCl:
+         Creating directory "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\..\lib".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\src /I..\src\libqhull /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D qh_QHpointer /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"qhullstatic_p.dir\Debug\\" /Fd"..\lib\qhullstatic_pd.pdb" /Gd /TC /analyze- /errorReport:prompt ..\src\libqhull\geom.c ..\src\libqhull\geom2.c ..\src\libqhull\global.c ..\src\libqhull\io.c ..\src\libqhull\libqhull.c ..\src\libqhull\mem.c ..\src\libqhull\merge.c ..\src\libqhull\poly.c ..\src\libqhull\poly2.c ..\src\libqhull\qset.c ..\src\libqhull\random.c ..\src\libqhull\rboxlib.c ..\src\libqhull\stat.c ..\src\libqhull\user.c ..\src\libqhull\usermem.c ..\src\libqhull\userprintf.c  /Zm1000 
+         geom.c
+         geom2.c
+         global.c
+         io.c
+         libqhull.c
+         mem.c
+         merge.c
+         poly.c
+         poly2.c
+         qset.c
+         random.c
+         rboxlib.c
+         stat.c
+         user.c
+         usermem.c
+         userprintf.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Debug\qhullstatic_p.lib) does not match the Library's OutputFile property value (C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\lib\qhullstatic_pd.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(qhullstatic_p) does not match the Library's OutputFile property value (qhullstatic_pd). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\lib\qhullstatic_pd.lib" /NOLOGO qhullstatic_p.dir\Debug\geom.obj
+         qhullstatic_p.dir\Debug\geom2.obj
+         qhullstatic_p.dir\Debug\global.obj
+         qhullstatic_p.dir\Debug\io.obj
+         qhullstatic_p.dir\Debug\libqhull.obj
+         qhullstatic_p.dir\Debug\mem.obj
+         qhullstatic_p.dir\Debug\merge.obj
+         qhullstatic_p.dir\Debug\poly.obj
+         qhullstatic_p.dir\Debug\poly2.obj
+         qhullstatic_p.dir\Debug\qset.obj
+         qhullstatic_p.dir\Debug\random.obj
+         qhullstatic_p.dir\Debug\rboxlib.obj
+         qhullstatic_p.dir\Debug\stat.obj
+         qhullstatic_p.dir\Debug\user.obj
+         qhullstatic_p.dir\Debug\usermem.obj
+         qhullstatic_p.dir\Debug\userprintf.obj
+         qhullstatic_p.vcxproj -> C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Debug\qhullstatic_p.lib
+       FinalizeBuildStatus:
+         Deleting file "qhullstatic_p.dir\Debug\qhullstatic_p.unsuccessfulbuild".
+         Touching "qhullstatic_p.dir\Debug\qhullstatic_p.lastbuildstate".
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\qhullstatic_p.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.70

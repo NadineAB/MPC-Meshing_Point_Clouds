@@ -1,0 +1,59 @@
+﻿Build started 28/02/2013 20.25.09.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\qhullcpp.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "qhullcpp.dir\Debug\qhullcpp.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\src\libqhullcpp /I..\src /I..\src\libqhull /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D qh_QHpointer /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"qhullcpp.dir\Debug\\" /Fd"..\lib\qhullcpp_d.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\libqhullcpp\Coordinates.cpp ..\src\libqhullcpp\PointCoordinates.cpp ..\src\libqhullcpp\Qhull.cpp ..\src\libqhullcpp\QhullFacet.cpp ..\src\libqhullcpp\QhullFacetList.cpp ..\src\libqhullcpp\QhullFacetSet.cpp ..\src\libqhullcpp\QhullHyperplane.cpp ..\src\libqhullcpp\QhullPoint.cpp ..\src\libqhullcpp\QhullPoints.cpp ..\src\libqhullcpp\QhullPointSet.cpp ..\src\libqhullcpp\QhullQh.cpp ..\src\libqhullcpp\QhullRidge.cpp ..\src\libqhullcpp\QhullSet.cpp ..\src\libqhullcpp\QhullStat.cpp ..\src\libqhullcpp\QhullVertex.cpp ..\src\libqhullcpp\QhullVertexSet.cpp ..\src\libqhullcpp\RboxPoints.cpp ..\src\libqhullcpp\RoadError.cpp ..\src\libqhullcpp\RoadLogEvent.cpp ..\src\libqhullcpp\UsingLibQhull.cpp  /Zm1000 
+         Coordinates.cpp
+         PointCoordinates.cpp
+         Qhull.cpp
+         QhullFacet.cpp
+         QhullFacetList.cpp
+         QhullFacetSet.cpp
+         QhullHyperplane.cpp
+         QhullPoint.cpp
+         QhullPoints.cpp
+         QhullPointSet.cpp
+         QhullQh.cpp
+         QhullRidge.cpp
+         QhullSet.cpp
+         QhullStat.cpp
+         QhullVertex.cpp
+         QhullVertexSet.cpp
+         RboxPoints.cpp
+         RoadError.cpp
+         RoadLogEvent.cpp
+         UsingLibQhull.cpp
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Debug\qhullcpp.lib) does not match the Library's OutputFile property value (C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\lib\qhullcpp_d.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(qhullcpp) does not match the Library's OutputFile property value (qhullcpp_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\lib\qhullcpp_d.lib" /NOLOGO qhullcpp.dir\Debug\Coordinates.obj
+         qhullcpp.dir\Debug\PointCoordinates.obj
+         qhullcpp.dir\Debug\Qhull.obj
+         qhullcpp.dir\Debug\QhullFacet.obj
+         qhullcpp.dir\Debug\QhullFacetList.obj
+         qhullcpp.dir\Debug\QhullFacetSet.obj
+         qhullcpp.dir\Debug\QhullHyperplane.obj
+         qhullcpp.dir\Debug\QhullPoint.obj
+         qhullcpp.dir\Debug\QhullPoints.obj
+         qhullcpp.dir\Debug\QhullPointSet.obj
+         qhullcpp.dir\Debug\QhullQh.obj
+         qhullcpp.dir\Debug\QhullRidge.obj
+         qhullcpp.dir\Debug\QhullSet.obj
+         qhullcpp.dir\Debug\QhullStat.obj
+         qhullcpp.dir\Debug\QhullVertex.obj
+         qhullcpp.dir\Debug\QhullVertexSet.obj
+         qhullcpp.dir\Debug\RboxPoints.obj
+         qhullcpp.dir\Debug\RoadError.obj
+         qhullcpp.dir\Debug\RoadLogEvent.obj
+         qhullcpp.dir\Debug\UsingLibQhull.obj
+         qhullcpp.vcxproj -> C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Debug\qhullcpp.lib
+       FinalizeBuildStatus:
+         Deleting file "qhullcpp.dir\Debug\qhullcpp.unsuccessfulbuild".
+         Touching "qhullcpp.dir\Debug\qhullcpp.lastbuildstate".
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\qhullcpp.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.90

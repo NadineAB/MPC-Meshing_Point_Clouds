@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\qhulltest\Coordinates_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\PointCoordinates_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\Qhull_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullFacet_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullFacetList_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullFacetSet_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullHyperplane_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullLinkedList_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullPoint_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullPoints_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullPointSet_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullRidge_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullSet_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\qhulltest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\QhullVertex_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\libqhullcpp\qt-qhull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\RboxPoints_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\RoadTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\UsingLibQhull_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\qhulltest\RoadTest.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\qhulltest\RoadTest.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\Coordinates_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\PointCoordinates_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\Qhull_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullFacet_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullFacetList_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullFacetSet_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullHyperplane_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullLinkedList_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullPoint_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullPoints_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullPointSet_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullRidge_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullSet_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\QhullVertex_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\RboxPoints_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="moc\UsingLibQhull_test.moc">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

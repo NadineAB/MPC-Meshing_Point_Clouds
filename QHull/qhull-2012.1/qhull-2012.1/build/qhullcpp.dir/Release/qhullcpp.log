@@ -1,0 +1,58 @@
+﻿Build started 26/03/2013 08.41.37.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\build\qhullcpp.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "qhullcpp.dir\Release\qhullcpp.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\src\libqhullcpp /I..\src /I..\src\libqhull /Zi /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D qh_QHpointer /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"qhullcpp.dir\Release\\" /Fd"..\lib\qhullcpp.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\libqhullcpp\Coordinates.cpp ..\src\libqhullcpp\PointCoordinates.cpp ..\src\libqhullcpp\Qhull.cpp ..\src\libqhullcpp\QhullFacet.cpp ..\src\libqhullcpp\QhullFacetList.cpp ..\src\libqhullcpp\QhullFacetSet.cpp ..\src\libqhullcpp\QhullHyperplane.cpp ..\src\libqhullcpp\QhullPoint.cpp ..\src\libqhullcpp\QhullPoints.cpp ..\src\libqhullcpp\QhullPointSet.cpp ..\src\libqhullcpp\QhullQh.cpp ..\src\libqhullcpp\QhullRidge.cpp ..\src\libqhullcpp\QhullSet.cpp ..\src\libqhullcpp\QhullStat.cpp ..\src\libqhullcpp\QhullVertex.cpp ..\src\libqhullcpp\QhullVertexSet.cpp ..\src\libqhullcpp\RboxPoints.cpp ..\src\libqhullcpp\RoadError.cpp ..\src\libqhullcpp\RoadLogEvent.cpp ..\src\libqhullcpp\UsingLibQhull.cpp  /Zm1000 
+         Coordinates.cpp
+         PointCoordinates.cpp
+         Qhull.cpp
+         QhullFacet.cpp
+         QhullFacetList.cpp
+         QhullFacetSet.cpp
+         QhullHyperplane.cpp
+         QhullPoint.cpp
+         QhullPoints.cpp
+         QhullPointSet.cpp
+         QhullQh.cpp
+         QhullRidge.cpp
+         QhullSet.cpp
+         QhullStat.cpp
+         QhullVertex.cpp
+         QhullVertexSet.cpp
+         RboxPoints.cpp
+         RoadError.cpp
+         RoadLogEvent.cpp
+         UsingLibQhull.cpp
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\build\Release\qhullcpp.lib) does not match the Library's OutputFile property value (C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\lib\qhullcpp.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\lib\qhullcpp.lib" /NOLOGO qhullcpp.dir\Release\Coordinates.obj
+         qhullcpp.dir\Release\PointCoordinates.obj
+         qhullcpp.dir\Release\Qhull.obj
+         qhullcpp.dir\Release\QhullFacet.obj
+         qhullcpp.dir\Release\QhullFacetList.obj
+         qhullcpp.dir\Release\QhullFacetSet.obj
+         qhullcpp.dir\Release\QhullHyperplane.obj
+         qhullcpp.dir\Release\QhullPoint.obj
+         qhullcpp.dir\Release\QhullPoints.obj
+         qhullcpp.dir\Release\QhullPointSet.obj
+         qhullcpp.dir\Release\QhullQh.obj
+         qhullcpp.dir\Release\QhullRidge.obj
+         qhullcpp.dir\Release\QhullSet.obj
+         qhullcpp.dir\Release\QhullStat.obj
+         qhullcpp.dir\Release\QhullVertex.obj
+         qhullcpp.dir\Release\QhullVertexSet.obj
+         qhullcpp.dir\Release\RboxPoints.obj
+         qhullcpp.dir\Release\RoadError.obj
+         qhullcpp.dir\Release\RoadLogEvent.obj
+         qhullcpp.dir\Release\UsingLibQhull.obj
+         qhullcpp.vcxproj -> C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\build\Release\qhullcpp.lib
+       FinalizeBuildStatus:
+         Deleting file "qhullcpp.dir\Release\qhullcpp.unsuccessfulbuild".
+         Touching "qhullcpp.dir\Release\qhullcpp.lastbuildstate".
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\build\qhullcpp.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.58

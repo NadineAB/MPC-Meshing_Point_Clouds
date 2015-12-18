@@ -1,0 +1,13 @@
+From version 2.0 to 2.1
+-----------------------
+
+> NEW RELEASES:
+Linux binaries available
+
+> NEW FUNCTIONS:
+File->Import/export Analyze 7.5TM files
+Edit->tag plane borders
+
+> BUG-FIXES:
+Small bug-fix in ply loader
+detect intersections: did not detect all, now it does (I hope) !

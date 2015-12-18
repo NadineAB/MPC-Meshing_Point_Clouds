@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include\;$(SolutionDir)\include\Qhull\;$(SolutionDir)\include\Qhull\libqhullcpp;$(SolutionDir)\include;C:\Program Files %28x86%29\boost\boost_1_47;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtScript;$(QTDIR)\include\Qt3Support;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtSvg;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtWebKit;$(QTDIR)\include\QtXmlPatterns;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtDeclarative;$(QTDIR)\include\phonon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib\openGL;$(SolutionDir)\lib\ANN;C:\Program Files\boost\boost_1_47\lib\;$(SolutionDir)\lib;$(SolutionDir)\lib\Qhull;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ANN.lib;qhull.lib;qhull_p.lib;qhullcpp.lib;qhullstatic.lib;qhullstatic_p.lib;libgmp-10.lib;libmpfr-4.lib;CGAL-vc100-mt-gd-4.1.lib;assimp.lib;glut32.lib;freeglut.lib;OpenGL32.lib;GLu32.lib;glew32.lib;qtmain.lib;QtCore4.lib;QtGui4.lib;QtMultimedia4.lib;QtXml4.lib;QtSql4.lib;QtOpenGL4.lib;opengl32.lib;glu32.lib;QtNetwork4.lib;QtScript4.lib;Qt3Support4.lib;comdlg32.lib;QAxServer.lib;QtSvg4.lib;QtHelp4.lib;QtWebKit4.lib;QtXmlPatterns4.lib;QtTest4.lib;QtDeclarative4.lib;phonon4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

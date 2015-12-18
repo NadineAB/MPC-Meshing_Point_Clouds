@@ -1,0 +1,337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><HTML>
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<A name=1></a><b>Index</b> <br>
+1. Basics ............................................................................................................................................... 2 <br>
+1.1 Terminology............................................................................................................................... 2 <br>
+2. Loading stage ................................................................................................................................... 2 <br>3. Inspection Mode............................................................................................................................... 3 <br>4. Interactive Mode .............................................................................................................................. 3 <br>
+4.1 Selections ................................................................................................................................... 3 <br>4.2 Interactive operations ................................................................................................................. 3 <br>
+5. Undo................................................................................................................................................. 4 <br>6. File ................................................................................................................................................... 5 <br>7. Edit ................................................................................................................................................... 7 <br>8. Selection........................................................................................................................................... 8 <br>9. Interaction ........................................................................................................................................ 9 <br>10. Check &amp; Repair............................................................................................................................ 11 <br>11. Algorithms ................................................................................................................................... 13 <br>Bibliography....................................................................................................................................... 15 <br>
+<hr>
+<A name=2></a><b>1.  Basics </b><br>
+ReMESH  is  an  editor  for  manifold  triangle  meshes.  It  has  been  developed  to  finely  post-process <br>polygon meshes coming from digitization sessions, but it can also be used to edit meshes produced <br>differently. <br>
+The mesh being edited is <b>manifold</b>, <b>oriented</b> and made of <b>triangles</b> only: if the input file does not <br>satisfy these requisites, the loader performs automatic conversion algorithms, that is, it triangulates <br>non-triangular faces, duplicates singularities and re-orients the triangles in a consistent manner (non <br>orientable meshes are cut). <br>
+ReMESH works on a single mesh, possibly made of several connected components (the <i>shells</i>). <br>
+Besides launching the operations selectable from the menus, the user may interact with the mesh in <br>either <b>inspection</b> (the default) or <b>interactive</b> mode. <br>
+In <i>inspection </i>mode, mouse clicks and drags within the <i>canvas </i>(i.e. the area where the 3D scene is <br>depicted) are used to control the visualization of the mesh, namely to translate or rotate the scene, to <br>zoom in and out, to choose among flat shading or wireframe, and so on.  <br>
+In <i>interactive</i> mode, mouse clicks and drags are used to perform actions on specific portions of the <br>mesh, such as selecting triangles or shells, swapping edges, and so on. <br>
+The  user  may  switch  between  inspection  and  interaction  modes  by  hitting  the  space  bar  on  the <br>keyboard. <br>
+As  for  any  standard  editor,  a  <b>selection  mechanism</b>  is  provided.  In  ReMESH,  a  selection  is  a <br>
+collection of triangles, that is, the triangle is the atomic entity treated (just as characters for a word <br>processor, or pixels for an image processor). <br>
+<b>1.1 Terminology </b><br>
+ReMESH is a Graphical User Interface (GUI) composed of: <br>
+-  A menu bar; <br>
+-  A <b>canvas</b>, which is the area in which the 3D scene is depicted; <br>
+-  An <b>information box</b>, which contains textual messages about the processes performed. <br>
+The <b>3D scene</b> depicted in the canvas is constituted by the mesh along with possible manipulators, <br>selection  tools,  or  any  other  graphical  entity.  The  <b>mesh</b>  is  the  part  of  the  scene  being  edited.  The <br>mesh is a unique entity, but it can be made of several connected components called <b>shells</b>. <br>
+Each shell may be closed or it may have one or several boundary loops. <br>
+<b>2.  Loading stage </b><br>
+ReMESH  incorporates  a  wrapper  for  loading  several  file  formats,  including  the  web  standard <br>VRML 2.0, the older VRML 1.0, the OpenInventor file format (.iv), the Object File Format (.off), <br>Stanford's  PLY,  Wavefront's  OBJ  and  Stereolithography  (.stl).  In  all  of  the  cases,  however,  the <br>parser  assumes  that  the  file  has  <b>one</b>  section  describing  the  vertex  coordinates,  and  <b>one</b>  section <br>describing the <b>faces </b>(only simply connected faces are allowed, and are automatically triangulated); <br>further information (transformations, colors, ...) is ignored. While loading, a data structure such as <br>the  one  described  in  appendix  B  is  initialized.  Some  file  formats,  however,  may  represent  sets  of <br>polygons  which  are  non-manifold  and/or  non-orientable.  In  this  case  the  loader  runs  the <br>Cutting&amp;Stitching  algorithm   [11]  to  make  the  mesh  manifold.  If  the  resulting  manifold  surface  is <br>not  oriented,  ReMESH  assigns  an  orientation  to  one  triangle  for  each  connected  component,  and <br>propagates the orientation to neighboring triangles; once all of the triangles have been visited, the <br>
+<hr>
+<A name=3></a>mesh  is  cut  along  edges  having  non-consistently  oriented  incident  triangles.  Possible  isolated <br>vertices are removed automatically. <br>
+Once the loader is settled with the topology and the structure is properly filled, the tool asks the <br>
+user  if  he/she  wishes  to  perform  some  geometrical  checks  and  corrections  (removal  of  degenerate <br>triangles, identification of edges having coincident end-points, ...). <br>
+If  the  user  wants  to  operate  on  more  models  at  the  same  time,  the  "Append"  function  may  be <br>
+used to load a triangle mesh from file and to insert it as a new shell(s) in the current mesh without <br>removing the existing shell(s). Notice that geometrical check is not proposed for the newly loaded <br>shell  that  may  consequently  have  degenerate  elements.  To  automatically  remove  all  the <br>degeneracies of the current shells use the functions provided in the Check &amp; Repair menu. <br>
+<b>3.  Inspection Mode </b><br>
+The  graphical  part  of  the  toolbox  is  built  upon  Coin3D   [22]  (an  extended  version  of  SGI's  Open <br>Inventor toolkit), and most of the facilities for navigating the scene have been inherited from it. For <br>self-containedness, however, we briefly sketch them here. <br>
+The canvas is provided by an Inventor Examiner viewer component. It allows the user to rotate <br>
+the  view  around  a  point of  interest  using  a  virtual  trackball  (left  click  and  drag).  This  viewer  also <br>allows the user to translate the camera in the viewer plane (middle-click and drag), as well as dolly <br>(move forward  and backward, through left+middle click and drag or through the mouse wheel) to <br>get  closer  to  or  further  away  from  the  point  of  interest.  The  viewer  also  supports  seek  to  quickly <br>move  the  camera  to  a  desired  point  (right  click  and  select  "functions    seek"  from  the  popup <br>menu). <br>
+Further interaction parameters can be controlled through the popup menu. <br>
+<b>4.  Interactive Mode </b><br>
+In  interactive  mode,  the  user  can  define  and  work  with  selections,  and  can  pick  specific  surface <br>points to work with. Normally, operations work on the entire mesh unless a selection is specified. If <br>a selection has been specified, operations work on it exclusively. The menu bar is highlighted when <br>a selection is active to make the user aware of the state even if selections are not visible. <br>
+<b>4.1 Selections </b><br>
+Clicking on a point of the mesh surface using the right mouse button sets the center of a <b>spherical <br>selection  tool</b>.  By  holding  the  right-button  and  dragging  the  mouse,  it  is  possible  to  modify  the <br>radius of the selection. Each triangle having all the three vertices within the sphere is selected. The <br>selection  can  be  expanded  or  contracted  by  rotating  the  mouse  wheel,  or  through  the  "Grow"  and <br>"Shrink" entries of the "Selection" menu. <br>
+Holding the <b>SHIFT</b> key before clicking adds the new selection to the existing one. Holding the <br>
+<b>CTRL</b>  key  before  clicking  removes  the  new  selection  from  the  existing  one.  Holding  both  the <br><b>SHIFT</b> and <b>CTRL</b> keys before clicking intersects the new selection with the existing one. <br>
+The usual shortcuts <b>CTRL+C</b>, <b>CTRL+X</b> and <b>CTRL+V</b> can be used to  perform <b>copy</b>, <b>cut</b> and <br>
+<b>paste</b> operations respectively, while the <b>DEL</b> key deletes all the selected triangles from the mesh. <br>In  ReMESH,  after  a  <i>paste</i>  operation  the  newly  inserted  shells  are  attached  to  a  manipulator  for <br>possible  transformations  until  the  user  hits  the  <b>ESC</b>  key  (see  "Transform  Shells"  in  the <br>"Interaction" menu for details). <br>
+<b>4.2 Interactive operations </b><br>
+The behavior of the left mouse button in interactive mode is user-defined through the choice of an <br>entry in the "Interaction" menu. The default behavior is "Select  Triangles", which means that a <br>
+<hr>
+<A name=4></a>left  click  on  the  mesh  surface  causes  the  selection  of  the  triangle  picked  (or  its  de-selection  if <br>already selected). <br>
+<b>5.  Undo </b><br>
+ReMESH  provides  an  "Undo"  functionality  that  can  be  called  through  the  standard  <b>CTRL+Z</b> <br>shortcut. Triangle meshes may be extremely complex, and it is not unusual to work with millions of <br>triangles in a single session; in these cases, recording the previous mesh version for the undo might <br>become  an  unnecessary  waste  of  time  and  memory.  For  these  cases,  ReMESH  provides  the <br>possibility to disable the undo functionality (see "Disable Undo" in the "Edit" menu). <br>
+Since  the  definition  of  a  selection  can  be  a  time-consuming  task,  operations  on  selections  are <br>considered  as  ordinary  operations,  therefore  the  "undo"  makes  it  possible  to  restore  the  previous <br>selection as well. <br>
+<hr>
+<A name=5></a><b>6.  File </b><br>
+·<b> </b><br>
+<b>Open </b><br>
+Loads  a  polygon  mesh  from  file  and  replaces  the  current  mesh  with  the  newly  loaded  mesh. <br>Supported  file  formats  are  VRML  (1.0  and  2.0),  Open  Inventor  (.iv),  Object  File  Format  (.off), <br>Stanford's PLY, Wavefront's OBJ and Stereolithography (.stl). See "Loading stage" for details on <br>partially supported formats and "Import " to know how to convert scene graphs to triangle meshes. <br>
+·<b> </b><br>
+<b>Append </b><br>
+Loads  a  polygon  mesh  from  file  and  adds  it  to  the  current  mesh  without  removing  the  existing <br>shells. <br>
+·<b> </b><br>
+<b>Reload </b><br>
+Loads the lastly saved version of the current mesh. <br>
+·<b> </b><br>
+<b>Save </b><br>
+Saves the current mesh to file. <br>
+·<b> </b><br>
+<b>Save as ... </b><br>
+This button pops-up a file selector from which the user may choose the name of an existing file to <br>overwrite, or may specify a new file name for the current model. If the file exists confirmation will <br>be asked before overwriting. <br>
+The FORMAT is chosen based on the filename extension according to the following table: <br>
+&quot;.wrl&quot; -&gt; ASCII VRML 1.0 <br>&quot;.iv&quot;  -&gt; Open Inventor 2.1 <br>&quot;.off&quot; -&gt; Object File Format <br>&quot;.ply&quot; -&gt; Stanford's PLY format <br>&quot;.obj&quot; -&gt; Wavefront's OBJ <br>&quot;.stl&quot; -&gt; Stereolithography <br>&quot;.tri&quot; -&gt; IMATI ver-tri <br>
+If no extension is provided, ReMESH automatically appends &quot;.wrl&quot; to the filename and saves it as <br>an ASCII VRML 1.0 model. <br>
+·<b> </b><br>
+<b>Import </b><b> Scene Graph </b><br>
+This function allows to load an Open Inventor or VRML file containing a generic scene graph, not <br>necessarily  a  polygon  mesh.  The  scene  graph  is  virtually  rendered  by  the  underlying  Coin3D <br>subsystem, and the resulting triangles are used to build the resulting new mesh. <br>
+·<b> </b><br>
+<b>Import </b><b> 3D Image </b><br>
+This  function  allows  to  load  a  3D  image  stored  in  AnalyzeTM  7.5  format  and  to  convert  it  to  a <br>triangle  mesh  by  executing  a  marching-cubes  algorithm.  Besides  selecting  the  threshold  value  for <br>iso-surfacing,  the  user  may  choose  to  subsample  the  input  image  prior  to  conversion  (3D  images <br>can be huge). <br>
+·<b> </b><br>
+<b>Export </b><b> 3D Image </b><br>
+This function rasterizes the mesh to a binary 3D image and saves it in AnalyzeTM 7.5 format. The <br>user is asked to select the size of the grid. <br>
+<hr>
+<A name=6></a>·<b> </b><br>
+<b>Snapshot ... </b><br>
+Converts the currently visible canvas to an image file. <br>
+·<b> </b><br>
+<b>Properties ... </b><br>
+Shows information about the current mesh (number of vertices, boundary loops, ...). <br>
+<hr>
+<A name=7></a><b>7.  Edit </b><br>
+·<b> </b><br>
+<b>Undo </b><br>
+Restores the mesh as it was before the last operation. Only one undo step can be done (double undo <br>is equivalent to no undo). <br>
+·<b> </b><br>
+<b>Disable Undo </b><br>
+Disables  the  undo  function  to  save  memory  and  somehow  (actually  very  little)  speed-up  the <br>operations. The undo can be re-enabled later on. <br>
+·<b> </b><br>
+<b>Copy / Cut / Paste / Delete </b><br>
+The  copy  and  paste  mechanism  is  standard.  Selected  triangles  are  copied  (as  a  mesh)  to  the <br>clipboard,  and  then  pasted  as  new  shells.  After  a  <i>paste</i>  operation  the  newly  inserted  shells  are <br>attached  to  a  manipulator  for  possible  transformations  until  the  user  hits  the  <b>ESC</b>  key  (see <br>"Transform  Shells"  in  the  "Interaction"  menu  for  details).  The  <i>delete</i>  process  removes  all  the <br>triangles  currently  selected,  and  takes  care  of  maintaining  a  coherent  data-structure,  possibly  by <br>duplicating non-manifold vertices that can be created due to the removal. <br>
+·<b> </b><br>
+<b>Normalize mesh </b><br>
+The mesh is resized and translated so that its bounding box fits in the cube [0,1]x[0,1]x[0,1]. <br>
+·<b> </b><br>
+<b>Redistribute Shells </b><br>
+All the connected components are normalized and placed on a virtual sphere. Particularly useful to <br>work with several models having very different sizes and positions is space. <br>
+·<b> </b><br>
+<b>Flip Normals </b><br>
+Invert the orientation of all the mesh triangles. <br>
+·<b> </b><br>
+<b>Tag Sharp Edges ... </b><br>
+This  feature  allows  the  user  to  automatically  tag  as  sharp  (see  the  "Tag  Sharp  Edges"  in <br>"Interaction"  menu)  all  of  the  edges  in  which  the  normals  of  the  two  incident  triangles  form  an <br>excessive angle. The threshold value is selected through a dialog and defaults to /4 (= 45 degrees). <br>
+·<b> </b><br>
+<b>Tag Plane Borders ... </b><br>
+This function subdivides the mesh in nearly flat connected regions and tags their boundary as sharp. <br>Each single region can be selected through "InteractionSelectSharp-bounded region". <br>
+·<b> </b><br>
+<b>Join closest shells </b><br>
+Change the topology of the mesh by connecting the boundary of two different shells with a pair of <br>new triangles. Among all the possible pairs of shells with boundary that can be joined, the pair with <br>closest vertices is chosen and the closest vertices are joined. <br>
+<hr>
+<A name=8></a><b>8.  Selection </b><br>
+·<b> </b><br>
+<b>Grow </b><br>
+Adds  to  the  current  selection  all  the  triangles  having  at  least  one  vertex  on  the  border  of  the <br>selection. Equivalent to moving the mouse wheel forward. <br>
+·<b> </b><br>
+<b>Shrink </b><br>
+Removes from the current selection all the triangles having at least one vertex on the border of the <br>selection. Equivalent to moving the mouse wheel backward. <br>
+·<b> </b><br>
+<b>Invert </b><br>
+Toggles the selection status of all the triangles. <br>
+·<b> </b><br>
+<b>Select Boundary </b><br>
+This features selects all the triangles having at least one vertex on the boundary of the mesh. This <br>may  be  useful,  for  example,  to  &quot;erode&quot;  range  maps,  in  which  the  boundary  typically  incorporates <br>most of the measurement distortion. <br>
+<hr>
+<A name=9></a><b>9.  Interaction </b><br>
+·<b> </b><br>
+<b>Select </b><b> Triangles </b><br>
+When this toggle is set (the default), each triangle the user clicks on is marked as &quot;selected&quot;. If the <br>user clicks on a previously selected triangle, it changes its state to &quot;unselected&quot;. <br>
+·<b> </b><br>
+<b>Select </b><b> Vertex neighbors </b><br>
+When  the  user  clicks  on  (or  nearby)  a  vertex,  all  the  triangles  incident  at  that  vertex  are  selected. <br>The <b>SHIFT</b> and <b>CTRL</b> modifiers work as in the case of the spherical selections (see "Selections"). <br>
+·<b> </b><br>
+<b>Select </b><b> Shells </b><br>
+When this toggle is set, the shell containing the triangle clicked is selected. The <b>SHIFT</b> and <b>CTRL</b> <br>modifiers work as in the case of the spherical selections (see "Selections"). <br>
+·<b> </b><br>
+<b>Select </b><b> Sharp-bounded region </b><br>
+Selects all the triangles belonging to a "sharply bounded" region. Specifically, the surface point the <br>user clicks on is used as a seed to grow the selected region up to edges tagged as <i>sharp</i>. The <b>SHIFT</b> <br>and <b>CTRL</b> modifiers work as in the case of the spherical selections (see "Selections"). <br>
+·<b> </b><br>
+<b>Select </b><b> Connected selection </b><br>
+When  this  toggle  is  set,  the  triangle  clicked  is  used  to  define  the  only  component  of  the  current <br>selection that remains selected. <br>
+·<b> </b><br>
+<b>Remove triangles </b><br>
+Each triangle the user clicks on is removed from the mesh. The process takes care of maintaining a <br>coherent data-structure, possibly by duplicating non-manifold vertices that can be created due to the <br>removal. <br>
+·<b> </b><br>
+<b>Flip Shells </b><br>
+The normals of all the triangles in the shell clicked are inverted. <br>
+·<b> </b><br>
+<b>Swap edges </b><br>
+When  the  user  clicks  on  (or  nearby)  an  edge,  that  edge  is  swapped.  Also  in  this  case,  the  toolbox <br>takes care of not performing illegal swaps (i.e. boundary edges or resulting incoherent topology). <br>
+·<b> </b><br>
+<b>Insert vertices </b><br>
+When this toggle is set, a new vertex is inserted in the point of the surface the user clicks on. If such <br>a point is inside a triangle, the insertion is performed through a triangle-split operation. If it is on (or <br>nearby) an  edge,  an edge-split operation subdivides that edge.  If it is on  (or nearby)  a vertex, that <br>vertex is snapped to the position of the point. In all of the cases, the term &quot;nearby&quot; is quantified by <br>the  "Angular  tolerance"  chosen  by  the  user  in  the  "Check  &amp;  Repair"  menu.  Such  a  threshold <br>prevents  the  creation  of  nearly  degenerate  triangles  that  would  be  produced  by  splitting  a  triangle <br>with a point too close to one of its edges. <br>
+<hr>
+<A name=10></a>·<b> </b><br>
+<b>Triangulate Holes </b><br>
+When  this  toggle  is  set,  the  user  can  click  on  a  boundary  edge  to  start  a  triangulation  routine  that <br>tries  to  fill  the  corresponding  hole.  The  triangulation  approach  is  based  on  a  number  of  heuristics <br>inspired  from   [20]  and   [4]  which  try  to  minimize  bad  behaviors  such  as  extreme  dihedral  angles, <br>degenerate triangles, and so on. No new vertex is inserted. <br>
+·<b> </b><br>
+<b>Fill Holes </b><br>
+This works as "Triangulate Holes", but refines and smooths the resulting patch so as to reproduce <br>the  sampling  density  of  neighboring  regions  and  to  have  a  tangential  continuity  with  the <br>surrounding mesh, as described in  [17]. <br>
+·<b> </b><br>
+<b>Tag Sharp Edges </b><br>
+When this toggle is set, the behavior of the clicks is similar to the case of select triangles, except for <br>the  fact  that  here  the  user  selects  edges  instead  of  triangles.  These  edges  will  receive  particular <br>treatment during some other processes (e.g.,<i> </i>"Subdivision  Bender") and can be used to define the <br>boundary of regions to be selected through "Select  Sharp-bounded region". <br>
+·<b> </b><br>
+<b>Transform Shells </b><br>
+When this toggle is set, a click on a shell results in the attachment of a manipulator to that shell. The <br>manipulator  might  be  used  to  translate,  rotate  and  scale  the  shell  independently  of  the  remaining <br>mesh. To remove the manipulator hit the <b>ESC</b> key on the keyboard. <br>
+·<b> </b><br>
+<b>Join Boundaries </b><br>
+This  feature  requires  the  user  to  click  on  two  vertices  belonging  to  two  different  boundary  loops. <br>Starting from such a pair, the algorithm joins the two loops with new triangles. Such newly inserted <br>triangles  remain  selected  for  possible  further  processing.  The  two  boundaries  can  be  "just <br>connected", that is, only two triangles are added to change the topology. If the boundaries are to be <br>filled  completely  (as  opposed  to  being  just  connected),  the  user  may  choose  whether  to  refine  the <br>patch  by  inserting  additional  vertices,  or  to  smooth  it,  by  moving  additional  vertices  towards <br>positions that make the patch fairly smooth with respect to the original geometry. <br>
+·<b> </b><br>
+<b>Restore interaction </b><br>
+When  ReMESH  is  waiting  for  specific  interactions  (e.g.  selection  of  the  second  point  for  "Join <br>Boundaries", removal of a transformation manipulator) the user may tell ReMESH not to wait any <br>more by using this function or, equivalently, by hitting the <b>ESC</b> key. <br>
+·<b> </b><br>
+<b>Toggle Viewing </b><br>
+Switches  between  inspection  and  interactive  modes  (see  "Inspection  Mode"  and  "Interactive <br>Mode"). <br>
+<hr>
+<A name=11></a><b>10.  Check &amp; Repair  </b><br>
+·<b> </b><br>
+<b>Check Geometry </b><br>
+This  action  looks  for  coincident  vertices,  coincident  edges,  degenerate  triangles  and  overlapping <br>adjacent  triangles,  according  to  the  current  value  of    set  through  "Angular  tolerance".  If  one  of <br>these situations is verified, the camera is automatically moved to a viewpoint suitable for showing <br>the flaw, so that the user can analyze the mesh, and choose to perform some manual editing  for  a <br>possible correction. Also, the user can rely on the automatic correction approaches provided. <br>
+·<b> </b><br>
+<b>Remove Degenerate Triangles </b><br>
+This button performs a removal of possible degenerate triangles. According to the current value of  <br>(see  "Angular  tolerance"),  all  of  the  degenerate  triangles  are  removed  from  the  mesh,  unless  their <br>removal  would  corrupt  the  topology;  in  this  case,  the  user  must  manually  remove  these  elements <br>through interactive operations (see "Interaction"). Note that in extreme cases (very large  or wire-<br>like cylinders connecting two bodies) this action may also cause topological modifications. <br>
+·<b> </b><br>
+<b>Remove Overlapping Triangles </b><br>
+This action removes all of the triangles whose normals form an excessive angle with the normals of <br>the neighbors. Such an angle is "excessive" if it is less than  (see "Angular tolerance"). <br>
+·<b> </b><br>
+<b>Select Intersecting Triangles </b><br>
+This selects all the intersecting triangles, and works both on self-intersections and on intersections <br>of  different  shells.  If  a  selection  was  already  present,  the  test  is  performed  for  selected  triangles <br>only, and results in a sub-selection. This operation works with exact arithmetic described in <i> </i>[21]. <br>
+·<b> </b><br>
+<b>Glue Boundaries </b><br>
+This  action  looks  for  <b>exactly</b>  coincident  edges  and,  if  possible,  merges  them.  This  is  particularly <br>useful  to  topologically  join  several  connected  components  that  are  usually  created  by  geometric <br>modeling tools. <br>
+·<b> </b><br>
+<b>Remove Smallest Shells </b><br>
+This  action  scans  the  mesh  and  removes  all  of  the  shells  but  the  one  with  the  largest  number  of <br>triangles. This is useful for eliminating typical tiny disconnected sheets from models coming from <br>marching-cubes or other sorts of polygonization algorithms. <br>
+·<b> </b><br>
+<b>Select Tiny Handles </b><br>
+This action looks for small handles and tunnels, referred to as <i>topological noise </i>in <i> </i>[13], and selects <br>them.  After  clicking  on  this  menu  entry,  ReMESH  asks  the  user  to  perform  a  spherical  selection <br>through the spherical selection tool (see "Selections"); such an operation, however, does not result <br>in an actual selection, while it is used to define a threshold size for handles to be selected. <br>
+·<b> </b><br>
+<b>Angular tolerance </b><br>
+In  order  to  deal  with  robustness,  ReMESH  implements  a  strategy  based  on  the  Epsilon  Geometry <br>introduced in <i> </i>[12]. The toolbox provides the possibility for the user to choose a threshold angle . In <br>subsequent computations, ReMESH prevents the creation of triangles with angles smaller than  or <br>bigger than -. Such a prevention is carried out through swapping and contraction of short edges, <br>
+<hr>
+<A name=12></a>inspired from ideas of <i> </i>[5]. The default value of  is <i>arcsin</i>(10-5); by experiment, this value proved to <br>be a good compromise between precision and robustness. <br>
+Notice  that  a  zero  value  makes  the  geometric  computations  non-robust.  Allowed  values  for  this <br>parameter range from 0 (no threshold, =0) to 100 ( = <i>arcsin</i>(0.01)). <br>
+<hr>
+<A name=13></a><b>11.  Algorithms </b><br>
+·<b> </b><br>
+<b>Subdivision </b><b> Mid-point </b><br>
+This  button  splits  all  the  edges  at  their  middle  points.  The  geometry  of  the  mesh  does  not  change <br>but the number of triangles is quadruplicated. All the edges are split unless a selection is active; in <br>this latter case, only the edges belonging to the selected area(s) are split. <br>
+·<b> </b><br>
+<b>Subdivision </b><b> Loop </b><br>
+This  button  performs  a  subdivision  step  using  Loop's  scheme.  Boundary  treatment  is  provided, <br>while no special rule is implemented to manage sharp edges. If a selection is active, the subdivision <br>works on it only. <br>
+·<b> </b><br>
+<b>Subdivision </b><b> Bender </b><br>
+This button performs a subdivision step using Bender, a modified Butterfly  scheme in which both <br>boundaries and sharp edges are treated properly   [2].  If a selection is active, the subdivision works <br>on it only. <br>
+·<b> </b><br>
+<b>Subdivision </b><b> Sqrt(3) </b><br>
+This button performs a subdivision step based on Kobbelt's approximant sqrt(3) scheme. No support <br>is provided for boundaries and sharp edges. If a selection is active, the subdivision works on it only. <br>
+·<b> </b><br>
+<b>Resampling </b><b> Uniform Remesh </b><br>
+This button strives to make the vertex distribution uniform on the model. The number of vertices in <br>the new mesh can be specified in the dialog along with the number of relaxation steps. Sharp edges <br>and boundaries are handled properly. Although a selection may be active, this feature works on the <br>entire  mesh  in  any  case.  Note  that  vertices  are  moved  on  their  tangent  plane,  which  does  not <br>guarantee that they lie on the initial surface. <br>
+·<b> </b><br>
+<b>Resampling </b><b> Simplify </b><br>
+This button pops up a dialog containing a set of parameters for the simplification. The user can set <br>the desired number of vertices and choose whether to "prevent mesh inversion" (taking into account <br>that  in  this  case  the  processing  time  grows  slightly).  As  a  rule  of  thumb,  the  "prevent  inversion" <br>should be used when the surface is densely sampled on large flat regions. It is important to consider <br>that,  due  to  topological  constraints,  it  cannot  be  guaranteed  that  the  target  number  of  vertices  is <br>reached.  The  simplification  strategy  implemented  uses  the  quadric  error  matrices  (QEMs)  <br>introduced by Garland. If the 'priority on edge length' is checked, then edge length is used instead of <br>QEMs to drive the simplification (shortest edges are collapsed first). Works on the entire mesh. <br>
+·<b> </b><br>
+<b>Resampling </b><b> Marching Cubes </b><br>
+This  operation  remeshes  the  model  using  a  marching-cubes  like  pattern.  The  user  must  select  the <br>size of the grid (i.e. the number of voxels per side), and the process is performed according to the <br>Marching  Intersections  paradigm   [19].  This  functionality  is  particularly  useful  to  find  a  single <br>component approximation of a set of nearly adjacent shells. Works on the entire mesh. <br>
+·<b> </b><br>
+<b>Open to Disk </b><br>
+This operation performs a topological cut along edges in order to make the mesh homeomorphic to <br>a disk. Edges and vertices belonging to the cuts are properly duplicated. <br>
+<hr>
+<A name=14></a>·<b> </b><br>
+<b>Refine </b><br>
+This feature increases the number of vertices up to a user-selected value. Vertices are inserted one <br>by  one.  Each  of  them  is  inserted  in  the  mid-point  of  the  currently  longest  edge  of  the  mesh.  If  a <br>selection is active, only edges belonging to the selection are split. <br>
+·<b> </b><br>
+<b>Delaunize </b><br>
+This feature iteratively swaps edges to locally maximize the minimum angle. If the mesh is flat and <br>non-overlapping,  the  method  converges  to  a  2D  Delaunay  triangulation  of  the  vertices.  Otherwise <br>convergence is not guaranteed, and the method quits after 10 iterations. If a selection is active, only <br>edges belonging to the selection are swapped. <br>
+·<b> </b><br>
+<b>Laplacian Smooth </b><br>
+This button pops up a dialog where the user can select the number of Laplacian smoothing iterations <br>to be performed on the mesh. At each iteration, each vertex is moved towards the center of mass of <br>its neighbors. Tagged sharp edges  are smoothed  using a one-dimensional support.  If a selection is <br>active, the smoothing works on it only. <br>
+·<b> </b><br>
+<b>Spherize </b><br>
+Iterative flattening of regions with high Gaussian curvature. Tips and sharp concavities are greedily <br>smoothed. Works on the entire mesh. <br>
+·<b> </b><br>
+<b>Edge Sharpener </b><br>
+When  selecting  this  button,  the  Edge-Sharpener  algorithm  is  run   [1].  A  dialog  is  popped  up  from <br>which the user may select threshold values (default values are provided). Default values are safe for <br>rough meshes obtained through dense and non-adaptive samplings. Works on the entire mesh. <br>
+·<b> </b><br>
+<b>Add noise </b><br>
+This operation distributes Gaussian noise over the vertices in the normal direction. The amount of <br>noise can be selected by the user in the pop-up dialog as a percentage of the model's bounding ball <br>radius. Works on the entire mesh. <br>
+·<b> </b><br>
+<b>Fill Holes </b><br>
+When selected, this button pops up a dialog where the user can select a threshold number <i>n</i>. Then, <br>all  the  boundary  loops  made  of  at  most  <i>n</i>  edges  are  patched  using  the  same  strategy  as  in  the <br>interactive  operation  "Triangulate  Holes".  If  the  "refine"  toggle  is  set,  after  triangulation  new <br>vertices  are  inserted  in  the  patched  holes  so  as  to  reproduce  the  sampling  density  of  neighboring <br>regions. If the "smooth" toggle is set too, the newly inserted vertices are moved so as to produce a <br>tangentially  continuous  patch  with  respect  to  its  boundary   [17].  If  a  selection  exists,  this  button <br>limits its action to the selected region. Only completely selected boundaries are filled. <br>
+ <br>
+<hr>
+<A name=15></a><i><b>Bibliography </b></i><br>
+ <br>[1] <br>
+Attene,  M.,  Falcidieno,  B.,  Rossignac,  J.  and  Spagnuolo,  M.  2003.  <i>Edge-Sharpener: </i><br>
+<i>Recovering  sharp  features  in  triangulations  of  non-adaptively  re-meshed  surfaces</i>. <br>Proceedings of the 1st Eurographics Symposium on Geometry Processing, 63-72. <br>
+[2] <br>
+Attene,  M.,  Falcidieno,  B.,  Rossignac,  J.  and  Spagnuolo,  M.  2005.  <i>Sharpen&amp;Bend: </i><br>
+<i>Recovering curved sharp edges in triangle meshes produced by feature-insensitive sampling</i>, <br>IEEE Transactions on Visualization and Computer Graphics, 11, 2, 181-192. <br>
+[3] <br>
+Attene, M., Falcidieno, B., Spagnuolo, M. and Rossignac, J. 2003. <i>SwingWrapper: Retiling </i><br>
+<i>triangle meshes for better EdgeBreaker compression</i>. ACM Transactions on Graphics, 22, 4, <br>982-996. <br>
+[4] <br>
+Barequet,  G.  and  Sharir,  M.  1995.  <i>Filling  Gaps  in  the  Boundary  of  a  Polyhedron</i>. <br>
+Computer-Aided Geometric Design, 12, 2, 207-229. <br>
+[5] <br>
+Botsch,  M.  and  Kobbelt,  L.  P.  2001.  <i>A  Robust  Procedure  to  Eliminate  Degenerate  Faces </i><br>
+<i>from Triangle Meshes</i>. In Proceedings of Vision, Modeling and Visualization. <br>
+[6] <br>
+Bruzzone,  E.  and  De  Floriani,  L.  1990.  <i>Two  Data  Structures  for  Constructing </i><br>
+<i>Tetrahedralizations</i>. The Visual Computer, 6, 5, 266-283. <br>
+[7] <br>
+De  Floriani,  L.,  Falcidieno,  B.  and  Pienovi,  C.  1985.  <i>Delaunay-based  Representation  of </i><br>
+<i>Surfaces  defined  over  Arbitrarily  Shaped  Domains</i>.  Computer  Vision,  Graphics  and  Image <br>Processing, 32, 127-140. <br>
+[8] <br>
+Forrest,  A.  R.  1987.  <i>Computational  geometry  and  software  engineering:  Towards  a </i><br>
+<i>geometric computing environment</i>. Techniques for Computer Graphics, 23-37. <br>
+[9] <br>
+Fortune,  S.  1996.  <i>Robustness  issues  in  geometric  algorithms</i>.  In  Proceedings  of  the  1st <br>
+Workshop on Applied Computational Geometry (WACG '96), 9-14. <br>
+[10] <br>
+Garland M. and Heckbert, P.S. 1997. <i>Surface simplification using quadric error metrics</i>. In <br>
+Proceedings of ACM SIGGRAPH `97, 209-216. <br>
+[11] <br>
+Guéziec, A., Taubin, G., Lazarus, F. and Horn, B. 2001. <i>Cutting and stitching: Converting </i><br>
+<i>sets  of  polygons  to  manifold  surfaces</i>.  IEEE  Transactions  on  Visualization  and  Computer <br>Graphics, 7, 2, 136­151. <br>
+[12] <br>
+Guibas,  L.,  Salesin,  D.  and  Stolfi.  J.  1989.  <i>Epsilon  geometry:  building  robust  algorithms </i><br>
+<i>from imprecise computations</i>. ACM Symposium on Computational Geometry, 5, 208-217. <br>
+[13] <br>
+Guskov,  I.  and  Wood,  Z.  2001.  <i>Topological  noise  removal</i>.  In  Proceedings  of  Graphics <br>
+Interface `01, 19-26. <br>
+[14] <br>
+Hatcher, A. 2002. <i>Algebraic Topology</i>. Cambridge University Press, UK. <br>
+[15] <br>
+Kobbelt, L. 2000. <i>Sqrt(3)-subdivision</i>. In Proceedings of ACM SIGGRAPH '00, 103-112. <br>
+[16] <br>
+Lee,  A.  W.  F.,  Sweldens,  W.,  Schröder,  P.,  Cowsar,  L.  and  Dobkin,  D.  1998.  <i>MAPS: </i><br>
+<i>Multiresolution  adaptive  parameterization  of  surfaces</i>.  In  Proceedings  of  ACM  SIGGRAPH <br>`98, 95-104. <br>
+[17] <br>
+Liepa, P. 2003. <i>Filling Holes in Meshes</i>. In Proceedings of the Eurographic Symposium on <br>
+Geometry Processing, 200-206. <br>
+[18] <br>
+Loop, C. 1987. <i>Smooth subdivision surfaces based on triangles</i>. Master's thesis, University <br>
+of Utah (USA), Department of Mathematics. <br>
+[19] <br>
+Rocchini,  C.,  Cignoni,  P.,  Ganovelli,  F.,  Montani,  C.,  Pingi,  P.  and  Scopigno,  R.  2001. <br>
+<i>Marching  Intersections:  an  efficient  resampling  algorithm  for  surface  management</i>.  In <br>Proceedings of Shape Modeling International (SMI '01), 296-305. <br>
+[20] <br>
+Schroeder,  W.,  Zarge,  J.  and  Lorensen,  W.E.  1992.  <i>Decimation  of  triangle  meshes.</i>  In <br>
+Proceedings of ACM SIGGRAPH `92, 65-70. <br>
+[21] <br>
+Shewchuk,  J.  R.  1997.  <i>Adaptive  Precision  Floating-Point  Arithmetic  and  Fast  Robust </i><br>
+<i>Geometric Predicates</i>. Discrete &amp; Computational Geometry, 18, 305-363. <br>
+<hr>
+<A name=16></a>[22] <br>
+Systems in Motion, "Coin3D". http://www.coin3d.org. <br>
+[23] <br>
+Zorin,  D.,  Schröder,  P.  and  Sweldens,  W.  1996.  <i>Interpolating  subdivision for  meshes  with </i><br>
+<i>arbitrary topology</i>. In Proceedings of ACM SIGGRAPH '96, 189-192. <br>
+<hr>
+</BODY>
+</HTML>

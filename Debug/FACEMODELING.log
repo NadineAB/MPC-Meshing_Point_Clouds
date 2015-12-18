@@ -1,0 +1,110 @@
+﻿Build started 10/06/2013 11.15.34.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\FACEMODELING.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\FACEMODELING.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\FACEMODELING.unsuccessfulbuild".
+       CustomBuild:
+         Moc'ing facemodeling.h...
+         Uic'ing facemodeling.ui...
+         Moc'ing glCanvas.h...
+         Rcc'ing facemodeling.qrc...
+     1>RCC : warning : No resources in 'C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\facemodeling.qrc'.
+         
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Debug /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /IC:\Qt\4.8.4\include\QtMultimedia /IC:\Qt\4.8.4\include\QtXml /IC:\Qt\4.8.4\include\QtSql /IC:\Qt\4.8.4\include\QtOpenGL /IC:\Qt\4.8.4\include\QtNetwork /IC:\Qt\4.8.4\include\QtScript /IC:\Qt\4.8.4\include\Qt3Support /IC:\Qt\4.8.4\include\ActiveQt /IC:\Qt\4.8.4\include\QtSvg /IC:\Qt\4.8.4\include\QtHelp /IC:\Qt\4.8.4\include\QtWebKit /IC:\Qt\4.8.4\include\QtXmlPatterns /IC:\Qt\4.8.4\include\QtTest /IC:\Qt\4.8.4\include\QtDeclarative /IC:\Qt\4.8.4\include\phonon /I"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\\include" /I"C:\Program Files (x86)\boost\boost_1_47" /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Debug /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /IC:\Qt\4.8.4\include\QtMultimedia /IC:\Qt\4.8.4\include\QtXml /IC:\Qt\4.8.4\include\QtSql /IC:\Qt\4.8.4\include\QtOpenGL /IC:\Qt\4.8.4\include\QtNetwork /IC:\Qt\4.8.4\include\QtScript /IC:\Qt\4.8.4\include\Qt3Support /IC:\Qt\4.8.4\include\ActiveQt /IC:\Qt\4.8.4\include\QtSvg /IC:\Qt\4.8.4\include\QtHelp /IC:\Qt\4.8.4\include\QtWebKit /IC:\Qt\4.8.4\include\QtXmlPatterns /IC:\Qt\4.8.4\include\QtTest /IC:\Qt\4.8.4\include\QtDeclarative /IC:\Qt\4.8.4\include\phonon /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_MULTIMEDIA_LIB /D QT_XML_LIB /D QT_SQL_LIB /D QT_OPENGL_LIB /D QT_NETWORK_LIB /D QT_SCRIPT_LIB /D QT_QT3SUPPORT_LIB /D QT3_SUPPORT /D QAXSERVER /D QT_SVG_LIB /D QT_WEBKIT_LIB /D QT_XMLPATTERNS_LIB /D QT_DECLARATIVE_LIB /D QT_PHONON_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt boundingbox.cpp camera.cpp edge.cpp facemodeling.cpp GeneratedFiles\Debug\moc_facemodeling.cpp GeneratedFiles\Debug\moc_glCanvas.cpp glCanvas.cpp main.cpp math_3d.cpp matrix.cpp mesh.cpp trackball.cpp
+         boundingbox.cpp
+         camera.cpp
+         edge.cpp
+         facemodeling.cpp
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C2143: syntax error : missing ';' before '*'
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(78): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(78): error C2061: syntax error : identifier 'glCanvas'
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(79): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(79): error C2227: left of '->setObjectName' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2227: left of '->sizePolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2228: left of '.hasHeightForWidth' must have class/struct/union
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(84): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(84): error C2227: left of '->setSizePolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(85): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(85): error C2227: left of '->setCursor' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(86): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(86): error C2227: left of '->setMouseTracking' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(87): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(87): error C2227: left of '->setFocusPolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(89): error C2065: 'widget_1' : undeclared identifier
+         moc_facemodeling.cpp
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C2143: syntax error : missing ';' before '*'
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(78): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(78): error C2061: syntax error : identifier 'glCanvas'
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(79): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(79): error C2227: left of '->setObjectName' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2227: left of '->sizePolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2228: left of '.hasHeightForWidth' must have class/struct/union
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(84): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(84): error C2227: left of '->setSizePolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(85): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(85): error C2227: left of '->setCursor' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(86): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(86): error C2227: left of '->setMouseTracking' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(87): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(87): error C2227: left of '->setFocusPolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(89): error C2065: 'widget_1' : undeclared identifier
+         moc_glCanvas.cpp
+         glCanvas.cpp
+         main.cpp
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C2143: syntax error : missing ';' before '*'
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(78): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(78): error C2061: syntax error : identifier 'glCanvas'
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(79): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(79): error C2227: left of '->setObjectName' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2227: left of '->sizePolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(83): error C2228: left of '.hasHeightForWidth' must have class/struct/union
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(84): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(84): error C2227: left of '->setSizePolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(85): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(85): error C2227: left of '->setCursor' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(86): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(86): error C2227: left of '->setMouseTracking' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(87): error C2065: 'widget_1' : undeclared identifier
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(87): error C2227: left of '->setFocusPolicy' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\GeneratedFiles\ui_facemodeling.h(89): error C2065: 'widget_1' : undeclared identifier
+         math_3d.cpp
+         matrix.cpp
+         mesh.cpp
+         trackball.cpp
+         Generating Code...
+     1>c:\users\nadin_000\desktop\phd research\phase_1\paper_1_implemtation\halfedgeds-sphericalparmterization\automatic face modeling\facemodeling-v1\triangle.h(38): warning C4715: 'Triangle::operator[]' : not all control paths return a value
+     1>c:\users\nadin_000\desktop\phd research\phase_1\paper_1_implemtation\halfedgeds-sphericalparmterization\automatic face modeling\facemodeling-v1\edge.h(42): warning C4715: 'Edge::operator[]' : not all control paths return a value
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\HalfEdgeDS-SphericalParmterization\AUTOMATIC FACE MODELING\FACEMODELING-v1\FACEMODELING.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:19.34

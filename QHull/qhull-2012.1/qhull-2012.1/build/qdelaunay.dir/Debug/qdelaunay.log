@@ -1,0 +1,21 @@
+﻿Build started 28/02/2013 20.25.28.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\qdelaunay.vcxproj" on node 5 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "qdelaunay.dir\Debug\qdelaunay.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\src\libqhullcpp /I..\src /I..\src\libqhull /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"qdelaunay.dir\Debug\\" /Fd"..\bin\qdelaunay.pdb" /Gd /TC /analyze- /errorReport:prompt ..\src\qdelaunay\qdelaun.c  /Zm1000 
+         qdelaun.c
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Debug\qdelaunay.exe) does not match the Linker's OutputFile property value (C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\bin\qdelaunay.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\qdelaunay.exe" /VERSION:"6.0" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\lib\qhullstatic_d.lib /MANIFEST /ManifestFile:"qdelaunay.dir\Debug\qdelaunay.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"..\bin\qdelaunay.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\lib\qdelaunay.lib" /MACHINE:X86 qdelaunay.dir\Debug\qdelaun.obj  /STACK:10000000 /machine:X86 /debug 
+         qdelaunay.vcxproj -> C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Debug\qdelaunay.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\bin\qdelaunay.exe;#1" /manifest qdelaunay.dir\Debug\qdelaunay.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "qdelaunay.dir\Debug\qdelaunay.unsuccessfulbuild".
+         Touching "qdelaunay.dir\Debug\qdelaunay.lastbuildstate".
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\qdelaunay.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.58

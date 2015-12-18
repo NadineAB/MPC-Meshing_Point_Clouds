@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\boost\boost_1_47\lib\;$(SolutionDir)\lib\openGL;$(SolutionDir)\lib\;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libboost_thread-vc100-mt-gd-1_47.lib;CGAL-vc100-mt-gd-4.1.lib;assimp.lib;glut32.lib;OpenGL32.lib;GLu32.lib;glew32.lib;qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtMultimediad4.lib;QtXmld4.lib;QtSqld4.lib;QtOpenGLd4.lib;opengl32.lib;glu32.lib;QtNetworkd4.lib;QtScriptd4.lib;Qt3Supportd4.lib;comdlg32.lib;QAxServerd.lib;QtSvgd4.lib;QtHelpd4.lib;QtWebKitd4.lib;QtXmlPatternsd4.lib;QtTestd4.lib;QtDeclaratived4.lib;phonond4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;C:\Program Files %28x86%29\boost\boost_1_47;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtScript;$(QTDIR)\include\Qt3Support;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtSvg;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtWebKit;$(QTDIR)\include\QtXmlPatterns;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtDeclarative;$(QTDIR)\include\phonon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

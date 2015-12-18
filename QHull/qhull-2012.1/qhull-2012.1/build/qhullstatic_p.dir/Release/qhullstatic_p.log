@@ -1,0 +1,50 @@
+﻿Build started 26/03/2013 08.41.37.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\build\qhullstatic_p.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "qhullstatic_p.dir\Release\qhullstatic_p.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\src /I..\src\libqhull /Zi /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D qh_QHpointer /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"qhullstatic_p.dir\Release\\" /Fd"..\lib\qhullstatic_p.pdb" /Gd /TC /analyze- /errorReport:prompt ..\src\libqhull\geom.c ..\src\libqhull\geom2.c ..\src\libqhull\global.c ..\src\libqhull\io.c ..\src\libqhull\libqhull.c ..\src\libqhull\mem.c ..\src\libqhull\merge.c ..\src\libqhull\poly.c ..\src\libqhull\poly2.c ..\src\libqhull\qset.c ..\src\libqhull\random.c ..\src\libqhull\rboxlib.c ..\src\libqhull\stat.c ..\src\libqhull\user.c ..\src\libqhull\usermem.c ..\src\libqhull\userprintf.c  /Zm1000 
+         geom.c
+         geom2.c
+         global.c
+         io.c
+         libqhull.c
+         mem.c
+         merge.c
+         poly.c
+         poly2.c
+         qset.c
+         random.c
+         rboxlib.c
+         stat.c
+         user.c
+         usermem.c
+         userprintf.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\build\Release\qhullstatic_p.lib) does not match the Library's OutputFile property value (C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\lib\qhullstatic_p.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\lib\qhullstatic_p.lib" /NOLOGO qhullstatic_p.dir\Release\geom.obj
+         qhullstatic_p.dir\Release\geom2.obj
+         qhullstatic_p.dir\Release\global.obj
+         qhullstatic_p.dir\Release\io.obj
+         qhullstatic_p.dir\Release\libqhull.obj
+         qhullstatic_p.dir\Release\mem.obj
+         qhullstatic_p.dir\Release\merge.obj
+         qhullstatic_p.dir\Release\poly.obj
+         qhullstatic_p.dir\Release\poly2.obj
+         qhullstatic_p.dir\Release\qset.obj
+         qhullstatic_p.dir\Release\random.obj
+         qhullstatic_p.dir\Release\rboxlib.obj
+         qhullstatic_p.dir\Release\stat.obj
+         qhullstatic_p.dir\Release\user.obj
+         qhullstatic_p.dir\Release\usermem.obj
+         qhullstatic_p.dir\Release\userprintf.obj
+         qhullstatic_p.vcxproj -> C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\build\Release\qhullstatic_p.lib
+       FinalizeBuildStatus:
+         Deleting file "qhullstatic_p.dir\Release\qhullstatic_p.unsuccessfulbuild".
+         Touching "qhullstatic_p.dir\Release\qhullstatic_p.lastbuildstate".
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QT_Remeshing\Remesh\QHull\qhull-2012.1\qhull-2012.1\build\qhullstatic_p.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.32

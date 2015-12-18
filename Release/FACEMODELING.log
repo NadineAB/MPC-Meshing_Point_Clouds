@@ -1,0 +1,38 @@
+﻿Build started 28/10/2013 14.20.29.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\FACEMODELING.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\FACEMODELING.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /IC:\Qt\4.8.4\include\QtMultimedia /IC:\Qt\4.8.4\include\QtXml /IC:\Qt\4.8.4\include\QtSql /IC:\Qt\4.8.4\include\QtOpenGL /IC:\Qt\4.8.4\include\QtNetwork /IC:\Qt\4.8.4\include\QtScript /IC:\Qt\4.8.4\include\Qt3Support /IC:\Qt\4.8.4\include\ActiveQt /IC:\Qt\4.8.4\include\QtSvg /IC:\Qt\4.8.4\include\QtHelp /IC:\Qt\4.8.4\include\QtWebKit /IC:\Qt\4.8.4\include\QtXmlPatterns /IC:\Qt\4.8.4\include\QtTest /IC:\Qt\4.8.4\include\QtDeclarative /IC:\Qt\4.8.4\include\phonon /I"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\\include\\" /I"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\\include\Qhull\\" /I"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\\include\Qhull\libqhullcpp" /I"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\\include" /I"C:\Program Files (x86)\boost\boost_1_47" /I.\GeneratedFiles /I. /IC:\Qt\4.8.4\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.4\include\QtCore /IC:\Qt\4.8.4\include\QtGui /IC:\Qt\4.8.4\include\QtMultimedia /IC:\Qt\4.8.4\include\QtXml /IC:\Qt\4.8.4\include\QtSql /IC:\Qt\4.8.4\include\QtOpenGL /IC:\Qt\4.8.4\include\QtNetwork /IC:\Qt\4.8.4\include\QtScript /IC:\Qt\4.8.4\include\Qt3Support /IC:\Qt\4.8.4\include\ActiveQt /IC:\Qt\4.8.4\include\QtSvg /IC:\Qt\4.8.4\include\QtHelp /IC:\Qt\4.8.4\include\QtWebKit /IC:\Qt\4.8.4\include\QtXmlPatterns /IC:\Qt\4.8.4\include\QtTest /IC:\Qt\4.8.4\include\QtDeclarative /IC:\Qt\4.8.4\include\phonon /I"C:\Users\nadin_000\Desktop\PhD Research\Skin Mesh Animation\Implementation\Professor_edtion\virtua\virtua\include\Qt" /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_MULTIMEDIA_LIB /D QT_XML_LIB /D QT_SQL_LIB /D QT_OPENGL_LIB /D QT_NETWORK_LIB /D QT_SCRIPT_LIB /D QT_QT3SUPPORT_LIB /D QT3_SUPPORT /D QAXSERVER /D QT_SVG_LIB /D QT_WEBKIT_LIB /D QT_XMLPATTERNS_LIB /D QT_DECLARATIVE_LIB /D QT_PHONON_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt glCanvas.cpp
+         glCanvas.cpp
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\Win32\Release\\FACEMODELING.exe" /NOLOGO /LIBPATH:"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\\lib\openGL" /LIBPATH:"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\\lib\ANN" /LIBPATH:"C:\Program Files\boost\boost_1_47\lib\\" /LIBPATH:"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\\lib" /LIBPATH:"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\\lib\Qhull" /LIBPATH:C:\Qt\4.8.4\lib /LIBPATH:"C:\Program Files (x86)\boost\boost_1_47\lib" qtmain.lib QtCore4.lib QtGui4.lib QtMultimedia4.lib QtXml4.lib QtSql4.lib QtOpenGL4.lib opengl32.lib glu32.lib QtNetwork4.lib QtScript4.lib Qt3Support4.lib comdlg32.lib QAxServer.lib QtSvg4.lib QtHelp4.lib QtWebKit4.lib QtXmlPatterns4.lib QtTest4.lib QtDeclarative4.lib phonon4.lib ANN.lib qhull.lib qhull_p.lib qhullcpp.lib qhullstatic.lib qhullstatic_p.lib "libgmp-10.lib" "libmpfr-4.lib" "CGAL-vc100-mt-gd-4.1.lib" assimp.lib glut32.lib freeglut.lib OpenGL32.lib GLu32.lib glew32.lib qtmain.lib QtCore4.lib QtGui4.lib QtMultimedia4.lib QtXml4.lib QtSql4.lib QtOpenGL4.lib opengl32.lib glu32.lib QtNetwork4.lib QtScript4.lib Qt3Support4.lib comdlg32.lib QAxServer.lib QtSvg4.lib QtHelp4.lib QtWebKit4.lib QtXmlPatterns4.lib QtTest4.lib QtDeclarative4.lib phonon4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\FACEMODELING.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\Win32\Release\FACEMODELING.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\Win32\Release\FACEMODELING.lib" /MACHINE:X86 Release\FACEMODELING.res
+         Release\boundingbox.obj
+         Release\camera.obj
+         Release\edge.obj
+         Release\facemodeling.obj
+         Release\qrc_facemodeling.obj
+         Release\moc_facemodeling.obj
+         Release\moc_glCanvas.obj
+         Release\glCanvas.obj
+         Release\main.obj
+         Release\math_3d.obj
+         Release\matrix.obj
+         Release\mesh.obj
+         Release\trackball.obj
+         FACEMODELING.vcxproj -> C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\Win32\Release\FACEMODELING.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\Win32\Release\\FACEMODELING.exe;#1" /manifest Release\FACEMODELING.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\FACEMODELING.unsuccessfulbuild".
+         Touching "Release\FACEMODELING.lastbuildstate".
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\Face_Modeling\AUTOMATIC FACE MODELING\FACEMODELING-v5\FACEMODELING.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.66

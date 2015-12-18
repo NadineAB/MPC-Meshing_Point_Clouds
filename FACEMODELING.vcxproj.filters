@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{45401dec-d3ce-40ad-90fd-c0af2d1bcd06}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{6d9f5c5f-3407-4873-a8c0-1fd61149e483}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files\HalfEdgeDS">
+      <UniqueIdentifier>{ca5b3e7e-226e-4056-a767-bb515aeebf61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI">
+      <UniqueIdentifier>{6279be94-a0bb-49a3-8c19-1401e248ab38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resources">
+      <UniqueIdentifier>{24a983d0-8bb9-4a7b-b7e6-b1861e18ad58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resources_sc">
+      <UniqueIdentifier>{ba0b820b-7607-47d3-8067-790a8034d6b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HalfEdgeDS_sc">
+      <UniqueIdentifier>{6a8283bf-dd3f-42cc-babb-b5bf6d012f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI_sc">
+      <UniqueIdentifier>{6d94fd7b-ca11-411a-9e57-d42f6894bb70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CloseGap_sc">
+      <UniqueIdentifier>{9a7085de-dc2c-4c0c-bb24-2a110241fced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CloseGap">
+      <UniqueIdentifier>{44d80f20-0cc8-46cc-960e-ff0eb4cd8809}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="facemodeling.cpp">
+      <Filter>Source Files\GUI_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\GUI_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="math_3d.cpp">
+      <Filter>Source Files\Resources_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="boundingbox.cpp">
+      <Filter>Source Files\HalfEdgeDS_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="edge.cpp">
+      <Filter>Source Files\HalfEdgeDS_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh.cpp">
+      <Filter>Source Files\HalfEdgeDS_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix.cpp">
+      <Filter>Source Files\Resources_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="glCanvas.cpp">
+      <Filter>Source Files\GUI_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="trackball.cpp">
+      <Filter>Source Files\GUI_sc</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_facemodeling.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_facemodeling.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_glCanvas.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files\GUI_sc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="facemodeling.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="facemodeling.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="facemodeling.h">
+      <Filter>Header Files\GUI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="glCanvas.h">
+      <Filter>Header Files\GUI</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="math_3d.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="vector3.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="boundingbox.h">
+      <Filter>Header Files\HalfEdgeDS</Filter>
+    </ClInclude>
+    <ClInclude Include="edge.h">
+      <Filter>Header Files\HalfEdgeDS</Filter>
+    </ClInclude>
+    <ClInclude Include="triangle.h">
+      <Filter>Header Files\HalfEdgeDS</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex.h">
+      <Filter>Header Files\HalfEdgeDS</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_parent.h">
+      <Filter>Header Files\HalfEdgeDS</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="vectors.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>Header Files\HalfEdgeDS</Filter>
+    </ClInclude>
+    <ClInclude Include="argparser.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="array.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="bag.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="trackball.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_facemodeling.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FACEMODELING.rc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿Build started 28/02/2013 20.25.25.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\user_eg.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "user_eg.dir\Debug\user_eg.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\src /I..\src\libqhull /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D qh_QHpointer /D qh_QHpointer_dllimport /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"user_eg.dir\Debug\\" /Fd"..\bin\user_eg.pdb" /Gd /TC /analyze- /errorReport:prompt ..\src\user_eg\user_eg.c  /Zm1000 
+         user_eg.c
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Debug\user_eg.exe) does not match the Linker's OutputFile property value (C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\bin\user_eg.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\user_eg.exe" /VERSION:"6.0" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\lib\qhull_pd.lib /MANIFEST /ManifestFile:"user_eg.dir\Debug\user_eg.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"..\bin\user_eg.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\lib\user_eg.lib" /MACHINE:X86 user_eg.dir\Debug\user_eg.obj  /STACK:10000000 /machine:X86 /debug 
+         user_eg.vcxproj -> C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Debug\user_eg.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\bin\user_eg.exe;#1" /manifest user_eg.dir\Debug\user_eg.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "user_eg.dir\Debug\user_eg.unsuccessfulbuild".
+         Touching "user_eg.dir\Debug\user_eg.lastbuildstate".
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\user_eg.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.18

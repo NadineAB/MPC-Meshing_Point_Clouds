@@ -1,0 +1,56 @@
+﻿Build started 28/02/2013 20.27.44.
+     1>Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\libqhull.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "libqhull.dir\Release\libqhull.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\src /I..\src\libqhull /Zi /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D qhull_EXPORTS /D _WINDLL /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"libqhull.dir\Release\\" /Fd"..\lib\qhull.pdb" /Gd /TC /analyze- /errorReport:prompt ..\src\libqhull\geom.c ..\src\libqhull\geom2.c ..\src\libqhull\global.c ..\src\libqhull\io.c ..\src\libqhull\libqhull.c ..\src\libqhull\mem.c ..\src\libqhull\merge.c ..\src\libqhull\poly.c ..\src\libqhull\poly2.c ..\src\libqhull\qset.c ..\src\libqhull\random.c ..\src\libqhull\rboxlib.c ..\src\libqhull\stat.c ..\src\libqhull\user.c ..\src\libqhull\usermem.c ..\src\libqhull\userprintf.c ..\src\libqhull\userprintf_rbox.c  /Zm1000 
+         geom.c
+         geom2.c
+         global.c
+         io.c
+         libqhull.c
+         mem.c
+         merge.c
+         poly.c
+         poly2.c
+         qset.c
+         random.c
+         rboxlib.c
+         stat.c
+         user.c
+         usermem.c
+         userprintf.c
+         userprintf_rbox.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Release\libqhull.dll) does not match the Linker's OutputFile property value (C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\bin\qhull.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(libqhull) does not match the Linker's OutputFile property value (qhull). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\qhull.dll" /VERSION:"6.3" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /DEF:"..\src\libqhull\qhull-exports.def" /MANIFEST /ManifestFile:"libqhull.dir\Release\libqhull.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"..\lib\qhull.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\lib\qhull.lib" /MACHINE:X86 /DLL libqhull.dir\Release\geom.obj
+         libqhull.dir\Release\geom2.obj
+         libqhull.dir\Release\global.obj
+         libqhull.dir\Release\io.obj
+         libqhull.dir\Release\libqhull.obj
+         libqhull.dir\Release\mem.obj
+         libqhull.dir\Release\merge.obj
+         libqhull.dir\Release\poly.obj
+         libqhull.dir\Release\poly2.obj
+         libqhull.dir\Release\qset.obj
+         libqhull.dir\Release\random.obj
+         libqhull.dir\Release\rboxlib.obj
+         libqhull.dir\Release\stat.obj
+         libqhull.dir\Release\user.obj
+         libqhull.dir\Release\usermem.obj
+         libqhull.dir\Release\userprintf.obj
+         libqhull.dir\Release\userprintf_rbox.obj  /STACK:10000000 /machine:X86 
+            Creating library ..\lib\qhull.lib and object ..\lib\qhull.exp
+         libqhull.vcxproj -> C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\Release\libqhull.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\bin\qhull.dll;#2" /manifest libqhull.dir\Release\libqhull.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "libqhull.dir\Release\libqhull.unsuccessfulbuild".
+         Touching "libqhull.dir\Release\libqhull.lastbuildstate".
+     1>Done Building Project "C:\Users\nadin_000\Desktop\PhD Research\Phase_1\Paper_1_implemtation\QHull\qhull-2012.1\qhull-2012.1\build\libqhull.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.94
