@@ -6,4 +6,4 @@ This project addresses the problem of meshing point clouds using spherical param
 
 library used in the porject:
 - Boost, Qt
-
+- OpenMesh
