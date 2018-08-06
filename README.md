@@ -11,3 +11,4 @@ library used in the porject:
 - Boost, Qt
 - OpenMesh
 - CGAL
+-QHULL
