@@ -11,4 +11,6 @@ library used in the porject:
 - Boost, Qt
 - OpenMesh
 - CGAL
--QHULL
+- Qhull
+
+![Screenshot](https://github.com/NadineAB/MPC-Meshing_Point_Clouds/blob/master/Screen%20Shot%202018-08-07%20at%2000.22.54.png)
