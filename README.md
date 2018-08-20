@@ -5,7 +5,7 @@ Meshing Point Clouds using spherical parameterization
 This project addresses the problem of meshing point clouds using spherical parameterization presented in Gotsman's paper here http://www.cs.technion.ac.il/~gotsman/AmendedPubl/Matthias/meshing.pdf.
 
 Our approach relies on the automatic finding of the correspondences between the landmarks on the input laser scan and a template face mesh. Once we find the set of correspondences, we define a morphing function and apply it to the template mesh. As a result, the template mesh is morphed and represents the same facial features captured from the laser scan. Our method is completely automatic and does not rely neither on 1) any prior anatomical knowledge about the position of the landmarks
-nor on 2) the morphology of the input face.
+or on 2) the morphology of the input face.
 
 library used in the porject:
 - Boost, Qt
