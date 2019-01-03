@@ -19,6 +19,7 @@ library used in the porject:
 - CGAL
 - Profiler 
 - Qhull
+- Eigen
 - visual studio 
 
 ![Screenshot](https://github.com/NadineAB/MPC-Meshing_Point_Clouds/blob/master/Screen%20Shot%202018-08-07%20at%2000.22.54.png)
