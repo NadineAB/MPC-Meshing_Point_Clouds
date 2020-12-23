@@ -1,7 +1,7 @@
 #include "glCanvas.h"
 #include <QtCore/qmath.h>
 #include <QGLWidget>
-// Included files for OpenGL Rendering
+// Included files for OpenGL 
 //#include <GL/gl.h>
 #include <GL/glut.h>
 #include <windows.h>
