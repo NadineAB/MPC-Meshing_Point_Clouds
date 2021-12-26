@@ -16,7 +16,7 @@ Usage
 library used in the porject:
 - Boost, Qt
 - OpenMesh
-- CGAL
+- CGAL Lib
 - Profiler 
 - Qhull
 - Eigen 3.0
